@@ -214,7 +214,7 @@ export default function PartnersPage() {
             </p>
             
             <a
-              href="mailto:info@bellevillesdafoodbank.org?subject=Partnership Inquiry"
+              href="mailto:info@bellevillefoodbank.org?subject=Partnership Inquiry"
               className="inline-block px-10 py-4 bg-buttonbackground text-buttonforeground font-paragraph text-lg rounded-lg hover:opacity-90 transition-opacity"
             >
               Contact Us About Partnerships

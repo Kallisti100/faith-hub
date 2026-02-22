@@ -116,7 +116,7 @@ export default function HomePage() {
           >
             <div className="flex items-center gap-3 mb-8">
               <span className="h-px w-12 bg-secondary"></span>
-              <span className="font-paragraph text-sm uppercase tracking-[0.2em] text-secondary">Belleville SDA Food Bank</span>
+              <span className="font-paragraph text-sm uppercase tracking-[0.2em] text-secondary">Belleville Food Bank</span>
             </div>
             
             <h1 className="font-heading text-6xl md:text-7xl lg:text-8xl text-primary-foreground leading-[0.95] mb-8">
@@ -318,7 +318,7 @@ export default function HomePage() {
           <EventRow 
             date="OCT 12"
             title="Fall Harvest Distribution"
-            location="Belleville SDA Church Hall"
+            location="Belleville Church Hall"
             time="10:00 AM - 2:00 PM"
           />
           <EventRow 

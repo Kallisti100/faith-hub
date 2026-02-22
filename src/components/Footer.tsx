@@ -9,7 +9,7 @@ export default function Footer() {
           {/* About Section */}
           <div>
             <h3 className="font-heading text-xl text-primary-foreground mb-4">
-              Belleville SDA Food Bank
+              Belleville Food Bank
             </h3>
             <p className="font-paragraph text-base text-textbody leading-relaxed">
               A faith-centered ministry serving our community with compassion and care, providing both physical and spiritual nourishment.
@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-bordersubtle">
           <p className="font-paragraph text-sm text-textbody text-center">
-            © {new Date().getFullYear()} Belleville SDA Food Bank. All rights reserved. A ministry of faith, hope, and love.
+            © {new Date().getFullYear()} Belleville Food Bank. All rights reserved. A ministry of faith, hope, and love.
           </p>
         </div>
       </div>

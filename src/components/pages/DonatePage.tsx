@@ -231,7 +231,7 @@ export default function DonatePage() {
                   Join our team of dedicated volunteers helping with food distribution, events, and community outreach.
                 </p>
                 <a 
-                  href="mailto:info@bellevillesdafoodbank.org?subject=Volunteer Inquiry"
+                  href="mailto:info@bellevillefoodbank.org?subject=Volunteer Inquiry"
                   className="inline-block px-6 py-3 bg-primary text-textbody font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity"
                 >
                   Contact Us
@@ -246,7 +246,7 @@ export default function DonatePage() {
                   Non-perishable food items and essential supplies are always needed to support our community.
                 </p>
                 <a 
-                  href="mailto:info@bellevillesdafoodbank.org?subject=Food Donation"
+                  href="mailto:info@bellevillefoodbank.org?subject=Food Donation"
                   className="inline-block px-6 py-3 bg-primary text-textbody font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity"
                 >
                   Learn More

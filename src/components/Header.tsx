@@ -17,7 +17,7 @@ export default function Header() {
           {/* Logo/Brand */}
           <Link to="/" className="flex items-center space-x-3">
             <div className="font-heading text-2xl lg:text-3xl text-primary-foreground">
-              Belleville SDA Food Bank
+              Belleville Food Bank
             </div>
           </Link>
 
