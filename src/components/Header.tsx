@@ -53,6 +53,18 @@ export default function Header() {
             >
               Food for the Spirit
             </Link>
+            <Link 
+              to="/who-we-are" 
+              className="font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors"
+            >
+              Who We Are
+            </Link>
+            <Link 
+              to="/join-mission" 
+              className="font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors"
+            >
+              Join Our Mission
+            </Link>
             
             {/* Cart Icon */}
             <button
@@ -131,6 +143,20 @@ export default function Header() {
               className="block font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors py-2"
             >
               Food for the Spirit
+            </Link>
+            <Link 
+              to="/who-we-are" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors py-2"
+            >
+              Who We Are
+            </Link>
+            <Link 
+              to="/join-mission" 
+              onClick={() => setIsMenuOpen(false)}
+              className="block font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors py-2"
+            >
+              Join Our Mission
             </Link>
           </nav>
         )}

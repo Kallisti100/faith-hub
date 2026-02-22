@@ -8,6 +8,8 @@ import EventDetailPage from '@/components/pages/EventDetailPage';
 import DonatePage from '@/components/pages/DonatePage';
 import PartnersPage from '@/components/pages/PartnersPage';
 import SpiritPage from '@/components/pages/SpiritPage';
+import WhoWeArePage from '@/components/pages/WhoWeArePage';
+import JoinMissionPage from '@/components/pages/JoinMissionPage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -65,6 +67,20 @@ const router = createBrowserRouter([
         element: <SpiritPage />,
         routeMetadata: {
           pageIdentifier: 'spirit',
+        },
+      },
+      {
+        path: "who-we-are",
+        element: <WhoWeArePage />,
+        routeMetadata: {
+          pageIdentifier: 'who-we-are',
+        },
+      },
+      {
+        path: "join-mission",
+        element: <JoinMissionPage />,
+        routeMetadata: {
+          pageIdentifier: 'join-mission',
         },
       },
       {
