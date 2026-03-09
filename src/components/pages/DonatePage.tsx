@@ -43,7 +43,7 @@ export default function DonatePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-background via-earth-warm/10 to-background py-20 lg:py-28">
+      <section className="w-full bg-gradient-to-r from-background via-earth-linen/5 to-background py-20 lg:py-28">
         <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -51,7 +51,7 @@ export default function DonatePage() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-earth-warm rounded-full mb-8">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-earth-taupe rounded-full mb-8">
               <Heart className="text-white" size={40} />
             </div>
             
@@ -74,7 +74,7 @@ export default function DonatePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-r from-background to-earth-warm/5 border border-earth-warm/20 rounded-lg p-10 lg:p-12"
+            className="bg-gradient-to-r from-background to-earth-taupe/5 border border-earth-taupe/20 rounded-lg p-10 lg:p-12"
           >
             <h2 className="font-heading text-3xl lg:text-4xl text-primary-foreground mb-6 text-center">
               Your Impact
@@ -82,7 +82,7 @@ export default function DonatePage() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
               <div className="text-center">
-                <div className="font-heading text-5xl text-earth-warm mb-3">
+                <div className="font-heading text-5xl text-earth-taupe mb-3">
                   500+
                 </div>
                 <p className="font-paragraph text-base text-textbody">
@@ -91,7 +91,7 @@ export default function DonatePage() {
               </div>
               
               <div className="text-center">
-                <div className="font-heading text-5xl text-earth-terracotta mb-3">
+                <div className="font-heading text-5xl text-earth-sage mb-3">
                   12
                 </div>
                 <p className="font-paragraph text-base text-textbody">
@@ -100,7 +100,7 @@ export default function DonatePage() {
               </div>
               
               <div className="text-center">
-                <div className="font-heading text-5xl text-earth-sand mb-3">
+                <div className="font-heading text-5xl text-earth-stone mb-3">
                   100%
                 </div>
                 <p className="font-paragraph text-base text-textbody">
@@ -152,7 +152,7 @@ export default function DonatePage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-background border border-bordersubtle rounded-lg overflow-hidden hover:border-earth-warm transition-colors"
+                  className="bg-background border border-bordersubtle rounded-lg overflow-hidden hover:border-earth-taupe transition-colors"
                 >
                   {fund.itemImage && (
                     <div className="aspect-video overflow-hidden">
@@ -178,7 +178,7 @@ export default function DonatePage() {
                     
                     <div className="mb-6">
                       <div className="flex items-baseline space-x-2 mb-2">
-                        <span className="font-heading text-3xl text-earth-warm">
+                        <span className="font-heading text-3xl text-earth-taupe">
                           {formatPrice(fund.itemPrice || 0, currency ?? DEFAULT_CURRENCY)}
                         </span>
                         <span className="font-paragraph text-base text-textbody">
@@ -196,7 +196,7 @@ export default function DonatePage() {
                     <button
                       onClick={() => handleDonate(fund)}
                       disabled={addingItemId === fund._id}
-                      className="w-full px-6 py-3 bg-earth-warm text-white font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
+                      className="w-full px-6 py-3 bg-earth-taupe text-white font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
                     >
                       {addingItemId === fund._id ? 'Adding to Cart...' : 'Donate Now'}
                     </button>
@@ -209,7 +209,7 @@ export default function DonatePage() {
       </section>
 
       {/* Additional Ways to Give */}
-      <section className="w-full bg-gradient-to-r from-earth-warm via-earth-terracotta to-earth-sand py-20">
+      <section className="w-full bg-gradient-to-r from-earth-taupe via-earth-sage to-earth-stone py-20">
         <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -232,7 +232,7 @@ export default function DonatePage() {
                 </p>
                 <a 
                   href="mailto:info@bellevillefoodbank.org?subject=Volunteer Inquiry"
-                  className="inline-block px-6 py-3 bg-white text-earth-warm font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity font-semibold"
+                  className="inline-block px-6 py-3 bg-white text-earth-taupe font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity font-semibold"
                 >
                   Contact Us
                 </a>
@@ -247,7 +247,7 @@ export default function DonatePage() {
                 </p>
                 <a 
                   href="mailto:info@bellevillefoodbank.org?subject=Food Donation"
-                  className="inline-block px-6 py-3 bg-white text-earth-warm font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity font-semibold"
+                  className="inline-block px-6 py-3 bg-white text-earth-taupe font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity font-semibold"
                 >
                   Learn More
                 </a>
