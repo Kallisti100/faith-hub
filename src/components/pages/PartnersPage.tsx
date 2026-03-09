@@ -33,7 +33,7 @@ export default function PartnersPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full bg-background py-20 lg:py-28">
+      <section className="w-full bg-gradient-to-r from-background via-earth-sand/10 to-background py-20 lg:py-28">
         <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -41,8 +41,8 @@ export default function PartnersPage() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary rounded-full mb-8">
-              <Users className="text-secondary-foreground" size={40} />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-earth-sand rounded-full mb-8">
+              <Users className="text-white" size={40} />
             </div>
             
             <h1 className="font-heading text-5xl lg:text-6xl text-primary-foreground mb-6">
@@ -64,19 +64,19 @@ export default function PartnersPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-secondary rounded-lg overflow-hidden"
+            className="bg-earth-warm rounded-lg overflow-hidden"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-10 lg:p-16 flex flex-col justify-center">
-                <div className="inline-block px-4 py-2 bg-primary bg-opacity-30 rounded-full text-secondary-foreground font-paragraph text-sm mb-6 w-fit">
+                <div className="inline-block px-4 py-2 bg-primary bg-opacity-30 rounded-full text-white font-paragraph text-sm mb-6 w-fit">
                   Featured Partner
                 </div>
                 
-                <h2 className="font-heading text-4xl text-secondary-foreground mb-6">
+                <h2 className="font-heading text-4xl text-white mb-6">
                   Specialty Food Bank
                 </h2>
                 
-                <p className="font-paragraph text-lg text-secondary-foreground leading-relaxed mb-8">
+                <p className="font-paragraph text-lg text-white leading-relaxed mb-8">
                   A sister organization dedicated to providing specialized food assistance and resources to those in need. Their innovative approach and commitment to dignity align perfectly with our mission.
                 </p>
                 
@@ -146,7 +146,7 @@ export default function PartnersPage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-background border border-bordersubtle rounded-lg overflow-hidden hover:border-secondary transition-colors"
+                  className="bg-background border border-bordersubtle rounded-lg overflow-hidden hover:border-earth-warm transition-colors"
                 >
                   {partner.logo && (
                     <div className="aspect-video bg-primary bg-opacity-50 flex items-center justify-center p-8">
@@ -165,7 +165,7 @@ export default function PartnersPage() {
                     </h3>
                     
                     {partner.partnershipFocus && (
-                      <div className="inline-block px-3 py-1 bg-secondary bg-opacity-20 rounded-full text-secondary font-paragraph text-sm mb-4">
+                      <div className="inline-block px-3 py-1 bg-earth-warm bg-opacity-20 rounded-full text-earth-warm font-paragraph text-sm mb-4">
                         {partner.partnershipFocus}
                       </div>
                     )}
@@ -181,7 +181,7 @@ export default function PartnersPage() {
                         href={partner.websiteUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center space-x-2 text-secondary hover:text-primary-foreground transition-colors font-paragraph text-base"
+                        className="inline-flex items-center space-x-2 text-earth-warm hover:text-primary-foreground transition-colors font-paragraph text-base"
                       >
                         <span>Visit Website</span>
                         <ExternalLink size={16} />
@@ -215,7 +215,7 @@ export default function PartnersPage() {
             
             <a
               href="mailto:info@bellevillefoodbank.org?subject=Partnership Inquiry"
-              className="inline-block px-10 py-4 bg-buttonbackground text-buttonforeground font-paragraph text-lg rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-block px-10 py-4 bg-earth-warm text-white font-paragraph text-lg rounded-lg hover:opacity-90 transition-opacity"
             >
               Contact Us About Partnerships
             </a>

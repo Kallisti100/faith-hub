@@ -35,6 +35,14 @@ const SectionDivider = () => (
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, index }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  
+  // Rotate through earthy accent colors
+  const accentColors = ['earth-warm', 'earth-terracotta', 'earth-sand', 'earth-rust'];
+  const accentColor = accentColors[index % accentColors.length];
+  const bgColors = ['bg-earth-warm/5', 'bg-earth-terracotta/5', 'bg-earth-sand/5', 'bg-earth-rust/5'];
+  const bgColor = bgColors[index % bgColors.length];
+  const borderColors = ['border-earth-warm/30', 'border-earth-terracotta/30', 'border-earth-sand/30', 'border-earth-rust/30'];
+  const borderColor = borderColors[index % borderColors.length];
 
   return (
     <motion.div
@@ -42,20 +50,20 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, ind
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group relative p-8 border border-bordersubtle/30 bg-primary/50 hover:bg-secondary/10 transition-colors duration-500 rounded-sm overflow-hidden"
+      className={`group relative p-8 border ${borderColor} ${bgColor} hover:bg-secondary/10 transition-colors duration-500 rounded-sm overflow-hidden`}
     >
       <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
         {icon}
       </div>
       <div className="relative z-10">
-        <div className="mb-6 text-secondary inline-block p-3 bg-background/30 rounded-full border border-bordersubtle/20">
-          {icon}
+        <div className={`mb-6 inline-block p-3 bg-background/30 rounded-full border border-bordersubtle/20`}>
+          {React.cloneElement(icon as React.ReactElement, { className: `w-8 h-8 text-${accentColor}` })}
         </div>
         <h3 className="font-heading text-2xl text-primary-foreground mb-4">{title}</h3>
         <p className="font-paragraph text-textbody/80 leading-relaxed mb-6">
           {description}
         </p>
-        <div className="flex items-center text-sm font-bold text-secondary uppercase tracking-widest group-hover:text-primary-foreground transition-colors">
+        <div className={`flex items-center text-sm font-bold text-${accentColor} uppercase tracking-widest group-hover:text-primary-foreground transition-colors`}>
           Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </div>
       </div>
@@ -178,7 +186,7 @@ export default function HomePage() {
       </section>
 
       {/* --- MARQUEE SEPARATOR --- */}
-      <div className="w-full bg-secondary py-4 overflow-hidden flex items-center">
+      <div className="w-full bg-gradient-to-r from-secondary via-earth-warm to-earth-terracotta py-4 overflow-hidden flex items-center">
         <motion.div 
           animate={{ x: ["0%", "-50%"] }}
           transition={{ repeat: Infinity, ease: "linear", duration: 20 }}

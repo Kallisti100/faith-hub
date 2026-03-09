@@ -35,7 +35,14 @@ export default {
                 secondary: '#8A9A5B',
                 'secondary-foreground': '#FFFFFF',
                 'primary-foreground': '#C9D6B9',
-                primary: '#2F3E2F'
+                primary: '#2F3E2F',
+                // Earthy accent colors
+                'earth-warm': '#A67C52',      // Warm brown
+                'earth-terracotta': '#C17A5C', // Terracotta
+                'earth-sand': '#D4A574',       // Warm sand
+                'earth-clay': '#8B6F47',       // Deep clay
+                'earth-rust': '#9B5E3C',       // Rust accent
+                'earth-cream': '#E8D4C0',      // Warm cream
             },
         },
     },
