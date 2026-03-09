@@ -37,11 +37,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, ind
   const isInView = useInView(ref, { once: true, margin: "-50px" });
   
   // Rotate through earthy accent colors
-  const accentColors = ['earth-warm', 'earth-terracotta', 'earth-sand', 'earth-rust'];
+  const accentColors = ['earth-warm', 'earth-sand', 'earth-clay', 'earth-taupe'];
   const accentColor = accentColors[index % accentColors.length];
-  const bgColors = ['bg-earth-warm/5', 'bg-earth-terracotta/5', 'bg-earth-sand/5', 'bg-earth-rust/5'];
+  const bgColors = ['bg-earth-warm/5', 'bg-earth-sand/5', 'bg-earth-clay/5', 'bg-earth-taupe/5'];
   const bgColor = bgColors[index % bgColors.length];
-  const borderColors = ['border-earth-warm/30', 'border-earth-terracotta/30', 'border-earth-sand/30', 'border-earth-rust/30'];
+  const borderColors = ['border-earth-warm/30', 'border-earth-sand/30', 'border-earth-clay/30', 'border-earth-taupe/30'];
   const borderColor = borderColors[index % borderColors.length];
 
   return (
@@ -186,7 +186,7 @@ export default function HomePage() {
       </section>
 
       {/* --- MARQUEE SEPARATOR --- */}
-      <div className="w-full bg-gradient-to-r from-secondary via-earth-warm to-earth-terracotta py-4 overflow-hidden flex items-center">
+      <div className="w-full bg-gradient-to-r from-secondary via-earth-warm to-earth-sand py-4 overflow-hidden flex items-center">
         <motion.div 
           animate={{ x: ["0%", "-50%"] }}
           transition={{ repeat: Infinity, ease: "linear", duration: 20 }}

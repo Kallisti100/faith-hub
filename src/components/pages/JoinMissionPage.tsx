@@ -111,13 +111,20 @@ export default function JoinMissionPage() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Section */}
-      <section className="w-full max-w-[120rem] mx-auto px-4 py-20 md:py-32">
+      {/* Hero Section with Background Image */}
+      <section className="relative w-full max-w-[120rem] mx-auto px-4 py-20 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://static.wixstatic.com/media/1560bb_757b469d76bb425496a3a33d50d388f7~mv2.png?originWidth=1200&originHeight=600"
+            alt="Background pattern"
+            className="w-full h-full object-cover opacity-10 grayscale mix-blend-overlay"
+          />
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center"
+          className="text-center relative z-10"
         >
           <h1 className="font-heading text-6xl md:text-7xl mb-6 text-buttonbackground">
             Join Our Mission
@@ -129,12 +136,20 @@ export default function JoinMissionPage() {
       </section>
 
       {/* Partnership Benefits Section */}
-      <section className="w-full max-w-[120rem] mx-auto px-4 py-20 bg-primary/30 rounded-lg">
+      <section className="w-full max-w-[120rem] mx-auto px-4 py-20 bg-primary/30 rounded-lg relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://static.wixstatic.com/media/1560bb_e0ee9499fd6a4d288399e67c05a7b6d9~mv2.png?originWidth=1200&originHeight=600"
+            alt="Background pattern"
+            className="w-full h-full object-cover opacity-5 grayscale mix-blend-overlay"
+          />
+        </div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          className="relative z-10"
         >
           <h2 className="font-heading text-4xl md:text-5xl mb-12 text-buttonbackground text-center">
             Why Partner With Us?

@@ -36,13 +36,15 @@ export default {
                 'secondary-foreground': '#FFFFFF',
                 'primary-foreground': '#C9D6B9',
                 primary: '#2F3E2F',
-                // Earthy accent colors
+                // Earthy accent colors - muted earth tones
                 'earth-warm': '#A67C52',      // Warm brown
-                'earth-terracotta': '#C17A5C', // Terracotta
                 'earth-sand': '#D4A574',       // Warm sand
                 'earth-clay': '#8B6F47',       // Deep clay
-                'earth-rust': '#9B5E3C',       // Rust accent
                 'earth-cream': '#E8D4C0',      // Warm cream
+                'earth-taupe': '#9B8B7E',      // Muted taupe
+                'earth-sage': '#7A8B6F',       // Sage green
+                'earth-stone': '#8B8680',      // Stone gray
+                'earth-linen': '#D9CCC1',      // Linen beige
             },
         },
     },

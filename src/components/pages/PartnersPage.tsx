@@ -57,8 +57,15 @@ export default function PartnersPage() {
       </section>
 
       {/* Featured Partner - Specialty Food Bank */}
-      <section className="w-full py-16 bg-primary">
-        <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
+      <section className="w-full py-16 bg-primary relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://static.wixstatic.com/media/1560bb_757b469d76bb425496a3a33d50d388f7~mv2.png?originWidth=1200&originHeight=600"
+            alt="Background pattern"
+            className="w-full h-full object-cover opacity-5 grayscale mix-blend-overlay"
+          />
+        </div>
+        <div className="max-w-[100rem] mx-auto px-6 lg:px-12 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -196,8 +203,15 @@ export default function PartnersPage() {
       </section>
 
       {/* Partnership Opportunities */}
-      <section className="w-full bg-background py-20">
-        <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
+      <section className="w-full bg-background py-20 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://static.wixstatic.com/media/1560bb_e0ee9499fd6a4d288399e67c05a7b6d9~mv2.png?originWidth=1200&originHeight=600"
+            alt="Background pattern"
+            className="w-full h-full object-cover opacity-5 grayscale mix-blend-overlay"
+          />
+        </div>
+        <div className="max-w-[100rem] mx-auto px-6 lg:px-12 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

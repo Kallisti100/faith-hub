@@ -98,9 +98,16 @@ export default function SpiritPage() {
     <div className="min-h-screen bg-primary">
       <Header />
 
-      {/* Hero Section */}
-      <section className="w-full bg-background py-20 lg:py-28">
-        <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
+      {/* Hero Section with Background Image */}
+      <section className="relative w-full bg-background py-20 lg:py-28 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://static.wixstatic.com/media/1560bb_e0ee9499fd6a4d288399e67c05a7b6d9~mv2.png?originWidth=1200&originHeight=600"
+            alt="Background pattern"
+            className="w-full h-full object-cover opacity-10 grayscale mix-blend-overlay"
+          />
+        </div>
+        <div className="max-w-[100rem] mx-auto px-6 lg:px-12 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -123,8 +130,15 @@ export default function SpiritPage() {
       </section>
 
       {/* Bible Studies Section */}
-      <section className="w-full py-20 bg-primary">
-        <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
+      <section className="w-full py-20 bg-primary relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://static.wixstatic.com/media/1560bb_e0ee9499fd6a4d288399e67c05a7b6d9~mv2.png?originWidth=1200&originHeight=600"
+            alt="Background pattern"
+            className="w-full h-full object-cover opacity-5 grayscale mix-blend-overlay"
+          />
+        </div>
+        <div className="max-w-[100rem] mx-auto px-6 lg:px-12 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -309,8 +323,15 @@ export default function SpiritPage() {
       </section>
 
       {/* Devotional Subscription Section */}
-      <section className="w-full py-20 bg-secondary">
-        <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
+      <section className="w-full py-20 bg-secondary relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://static.wixstatic.com/media/1560bb_e0ee9499fd6a4d288399e67c05a7b6d9~mv2.png?originWidth=1200&originHeight=600"
+            alt="Background pattern"
+            className="w-full h-full object-cover opacity-5 grayscale mix-blend-overlay"
+          />
+        </div>
+        <div className="max-w-[100rem] mx-auto px-6 lg:px-12 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -51,7 +51,7 @@ export default function EventsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-background via-earth-terracotta/10 to-background py-20 lg:py-28">
+      <section className="w-full bg-gradient-to-r from-background via-earth-sand/10 to-background py-20 lg:py-28">
         <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -121,14 +121,14 @@ export default function EventsPage() {
                       
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center space-x-3">
-                          <Calendar className="text-earth-warm flex-shrink-0" size={20} />
+                          <Calendar className="text-earth-sand flex-shrink-0" size={20} />
                           <span className="font-paragraph text-base text-textbody">
                             {formatEventDate(event.eventDate)}
                           </span>
                         </div>
                         
                         <div className="flex items-center space-x-3">
-                          <Clock className="text-earth-terracotta flex-shrink-0" size={20} />
+                          <Clock className="text-earth-clay flex-shrink-0" size={20} />
                           <span className="font-paragraph text-base text-textbody">
                             {formatEventTime(event.eventTime)}
                           </span>
@@ -136,7 +136,7 @@ export default function EventsPage() {
                         
                         {event.location && (
                           <div className="flex items-start space-x-3">
-                            <MapPin className="text-earth-sand flex-shrink-0 mt-1" size={20} />
+                            <MapPin className="text-earth-taupe flex-shrink-0 mt-1" size={20} />
                             <span className="font-paragraph text-base text-textbody">
                               {event.location}
                             </span>
@@ -145,7 +145,7 @@ export default function EventsPage() {
                         
                         {event.isRegistrationRequired && (
                           <div className="flex items-center space-x-3">
-                            <Users className="text-earth-rust flex-shrink-0" size={20} />
+                            <Users className="text-earth-warm flex-shrink-0" size={20} />
                             <span className="font-paragraph text-base text-textbody">
                               Registration Required
                             </span>
@@ -165,8 +165,7 @@ export default function EventsPage() {
                     </div>
                   </Link>
                 </motion.div>
-              ))}
-            </div>
+              ))}\n            </div>
           )}
         </div>
       </section>
