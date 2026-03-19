@@ -43,7 +43,7 @@ export default function DonatePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-background via-earth-linen/5 to-background py-20 lg:py-28">
+      <section className="w-full bg-gradient-to-r from-primary via-angel-cream/30 to-primary py-20 lg:py-28">
         <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -51,7 +51,7 @@ export default function DonatePage() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-earth-taupe rounded-full mb-8">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary rounded-full mb-8">
               <Heart className="text-white" size={40} />
             </div>
             
@@ -59,7 +59,7 @@ export default function DonatePage() {
               Support Our Ministry
             </h1>
             
-            <p className="font-paragraph text-lg text-textbody leading-relaxed">
+            <p className="font-paragraph text-lg text-primary-foreground/70 leading-relaxed">
               Your generous donations help us continue serving our community with food assistance, spiritual programs, and compassionate care. Every contribution makes a meaningful difference in someone's life.
             </p>
           </motion.div>
@@ -74,7 +74,7 @@ export default function DonatePage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-r from-background to-earth-taupe/5 border border-earth-taupe/20 rounded-lg p-10 lg:p-12"
+            className="bg-gradient-to-r from-white/40 to-angel-gold/10 border border-angel-gold/30 rounded-lg p-10 lg:p-12"
           >
             <h2 className="font-heading text-3xl lg:text-4xl text-primary-foreground mb-6 text-center">
               Your Impact
@@ -82,28 +82,28 @@ export default function DonatePage() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
               <div className="text-center">
-                <div className="font-heading text-5xl text-earth-taupe mb-3">
+                <div className="font-heading text-5xl text-secondary mb-3">
                   500+
                 </div>
-                <p className="font-paragraph text-base text-textbody">
+                <p className="font-paragraph text-base text-primary-foreground/70">
                   Families served monthly
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="font-heading text-5xl text-earth-sage mb-3">
+                <div className="font-heading text-5xl text-angel-rose mb-3">
                   12
                 </div>
-                <p className="font-paragraph text-base text-textbody">
+                <p className="font-paragraph text-base text-primary-foreground/70">
                   Community events annually
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="font-heading text-5xl text-earth-stone mb-3">
+                <div className="font-heading text-5xl text-angel-gold mb-3">
                   100%
                 </div>
-                <p className="font-paragraph text-base text-textbody">
+                <p className="font-paragraph text-base text-primary-foreground/70">
                   Of donations support our mission
                 </p>
               </div>
@@ -125,7 +125,7 @@ export default function DonatePage() {
             <h2 className="font-heading text-4xl lg:text-5xl text-primary-foreground mb-4">
               Choose Where to Give
             </h2>
-            <p className="font-paragraph text-lg text-textbody max-w-3xl mx-auto">
+            <p className="font-paragraph text-lg text-primary-foreground/70 max-w-3xl mx-auto">
               Select a fund that resonates with your heart. Each contribution directly supports our mission to serve and uplift our community.
             </p>
           </motion.div>
@@ -140,7 +140,7 @@ export default function DonatePage() {
               <h3 className="font-heading text-3xl text-primary-foreground mb-4">
                 Donation Options Coming Soon
               </h3>
-              <p className="font-paragraph text-lg text-textbody max-w-2xl mx-auto">
+              <p className="font-paragraph text-lg text-primary-foreground/70 max-w-2xl mx-auto">
                 We're setting up our donation funds. Please check back soon or contact us directly to make a contribution.
               </p>
             </motion.div>
@@ -152,7 +152,7 @@ export default function DonatePage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-background border border-bordersubtle rounded-lg overflow-hidden hover:border-earth-taupe transition-colors"
+                  className="bg-white border border-angel-gold/20 rounded-lg overflow-hidden hover:border-angel-gold hover:shadow-lg transition-all"
                 >
                   {fund.itemImage && (
                     <div className="aspect-video overflow-hidden">
@@ -171,23 +171,23 @@ export default function DonatePage() {
                     </h3>
                     
                     {fund.itemDescription && (
-                      <p className="font-paragraph text-base text-textbody leading-relaxed mb-6">
+                      <p className="font-paragraph text-base text-primary-foreground/70 leading-relaxed mb-6">
                         {fund.itemDescription}
                       </p>
                     )}
                     
                     <div className="mb-6">
                       <div className="flex items-baseline space-x-2 mb-2">
-                        <span className="font-heading text-3xl text-earth-taupe">
+                        <span className="font-heading text-3xl text-secondary">
                           {formatPrice(fund.itemPrice || 0, currency ?? DEFAULT_CURRENCY)}
                         </span>
-                        <span className="font-paragraph text-base text-textbody">
+                        <span className="font-paragraph text-base text-primary-foreground/70">
                           suggested donation
                         </span>
                       </div>
                       
                       {fund.fundGoal && (
-                        <p className="font-paragraph text-sm text-textbody">
+                        <p className="font-paragraph text-sm text-primary-foreground/70">
                           Goal: {formatPrice(fund.fundGoal, currency ?? DEFAULT_CURRENCY)}
                         </p>
                       )}
@@ -196,7 +196,7 @@ export default function DonatePage() {
                     <button
                       onClick={() => handleDonate(fund)}
                       disabled={addingItemId === fund._id}
-                      className="w-full px-6 py-3 bg-earth-taupe text-white font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
+                      className="w-full px-6 py-3 bg-secondary text-white font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
                     >
                       {addingItemId === fund._id ? 'Adding to Cart...' : 'Donate Now'}
                     </button>
@@ -209,7 +209,7 @@ export default function DonatePage() {
       </section>
 
       {/* Additional Ways to Give */}
-      <section className="w-full bg-gradient-to-r from-earth-taupe via-earth-sage to-earth-stone py-20">
+      <section className="w-full bg-gradient-to-r from-secondary via-angel-gold to-angel-rose py-20">
         <div className="max-w-[100rem] mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -223,31 +223,31 @@ export default function DonatePage() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+              <div className="bg-white/15 backdrop-blur-sm rounded-lg p-8 border border-white/30">
                 <h3 className="font-heading text-2xl text-white mb-4">
                   Volunteer Your Time
                 </h3>
-                <p className="font-paragraph text-base text-white/90 leading-relaxed mb-6">
+                <p className="font-paragraph text-base text-white/95 leading-relaxed mb-6">
                   Join our team of dedicated volunteers helping with food distribution, events, and community outreach.
                 </p>
                 <a 
                   href="mailto:info@bellevillefoodbank.org?subject=Volunteer Inquiry"
-                  className="inline-block px-6 py-3 bg-white text-earth-taupe font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity font-semibold"
+                  className="inline-block px-6 py-3 bg-white text-secondary font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity font-semibold"
                 >
                   Contact Us
                 </a>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+              <div className="bg-white/15 backdrop-blur-sm rounded-lg p-8 border border-white/30">
                 <h3 className="font-heading text-2xl text-white mb-4">
                   Donate Food Items
                 </h3>
-                <p className="font-paragraph text-base text-white/90 leading-relaxed mb-6">
+                <p className="font-paragraph text-base text-white/95 leading-relaxed mb-6">
                   Non-perishable food items and essential supplies are always needed to support our community.
                 </p>
                 <a 
                   href="mailto:info@bellevillefoodbank.org?subject=Food Donation"
-                  className="inline-block px-6 py-3 bg-white text-earth-taupe font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity font-semibold"
+                  className="inline-block px-6 py-3 bg-white text-secondary font-paragraph text-base rounded-lg hover:opacity-90 transition-opacity font-semibold"
                 >
                   Learn More
                 </a>

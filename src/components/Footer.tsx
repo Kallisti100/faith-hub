@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary border-t border-bordersubtle">
+    <footer className="bg-gradient-to-b from-primary to-angel-cream border-t border-angel-gold/20">
       <div className="max-w-[120rem] mx-auto px-6 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* About Section */}
@@ -11,7 +11,7 @@ export default function Footer() {
             <h3 className="font-heading text-xl text-primary-foreground mb-4">
               Belleville Food Bank
             </h3>
-            <p className="font-paragraph text-base text-textbody leading-relaxed">
+            <p className="font-paragraph text-base text-primary-foreground/70 leading-relaxed">
               A faith-centered ministry serving our community with compassion and care, providing both physical and spiritual nourishment.
             </p>
           </div>
@@ -24,25 +24,25 @@ export default function Footer() {
             <nav className="space-y-3">
               <Link 
                 to="/events" 
-                className="block font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors"
+                className="block font-paragraph text-base text-primary-foreground/70 hover:text-secondary transition-colors"
               >
                 Events Calendar
               </Link>
               <Link 
                 to="/donate" 
-                className="block font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors"
+                className="block font-paragraph text-base text-primary-foreground/70 hover:text-secondary transition-colors"
               >
                 Make a Donation
               </Link>
               <Link 
                 to="/partners" 
-                className="block font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors"
+                className="block font-paragraph text-base text-primary-foreground/70 hover:text-secondary transition-colors"
               >
                 Our Partners
               </Link>
               <Link 
                 to="/spirit" 
-                className="block font-paragraph text-base text-textbody hover:text-primary-foreground transition-colors"
+                className="block font-paragraph text-base text-primary-foreground/70 hover:text-secondary transition-colors"
               >
                 Food for the Spirit
               </Link>
@@ -57,19 +57,19 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="text-secondary mt-1 flex-shrink-0" />
-                <span className="font-paragraph text-base text-textbody">
+                <span className="font-paragraph text-base text-primary-foreground/70">
                   Belleville, Ontario, Canada
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-secondary flex-shrink-0" />
-                <span className="font-paragraph text-base text-textbody">
+                <span className="font-paragraph text-base text-primary-foreground/70">
                   (613) 555-0123
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-secondary flex-shrink-0" />
-                <span className="font-paragraph text-base text-textbody">
+                <span className="font-paragraph text-base text-primary-foreground/70">
                   info@bellevillesdafoodbank.org
                 </span>
               </div>
@@ -101,15 +101,15 @@ export default function Footer() {
                 <Instagram size={24} />
               </a>
             </div>
-            <p className="font-paragraph text-sm text-textbody mt-6 leading-relaxed">
+            <p className="font-paragraph text-sm text-primary-foreground/70 mt-6 leading-relaxed">
               Stay updated with our latest events, programs, and ways to get involved in our ministry.
             </p>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-bordersubtle">
-          <p className="font-paragraph text-sm text-textbody text-center">
+        <div className="mt-12 pt-8 border-t border-angel-gold/20">
+          <p className="font-paragraph text-sm text-primary-foreground/70 text-center">
             © {new Date().getFullYear()} Belleville Food Bank. All rights reserved. A ministry of faith, hope, and love.
           </p>
         </div>

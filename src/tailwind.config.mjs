@@ -23,28 +23,28 @@ export default {
                 paragraph: "open sans"
             },
             colors: {
-                buttonbackground: '#8A9A5B',
+                buttonbackground: '#D4AF9F',
                 buttonforeground: '#FFFFFF',
-                textlight: '#C9D6B9',
-                textbody: '#FFFFFF',
-                bordersubtle: '#5A6A4A',
-                foreground: '#FFFFFF',
-                destructive: '#DF3131',
+                textlight: '#E8DFD5',
+                textbody: '#F5F3F0',
+                bordersubtle: '#E0D5CC',
+                foreground: '#F5F3F0',
+                destructive: '#E8796B',
                 destructiveforeground: '#FFFFFF',
-                background: '#2F3E2F',
-                secondary: '#8A9A5B',
+                background: '#FAF8F5',
+                secondary: '#C9A88B',
                 'secondary-foreground': '#FFFFFF',
-                'primary-foreground': '#C9D6B9',
-                primary: '#2F3E2F',
-                // Earthy accent colors - muted earth tones
-                'earth-warm': '#A67C52',      // Warm brown
-                'earth-sand': '#D4A574',       // Warm sand
-                'earth-clay': '#8B6F47',       // Deep clay
-                'earth-cream': '#E8D4C0',      // Warm cream
-                'earth-taupe': '#9B8B7E',      // Muted taupe
-                'earth-sage': '#7A8B6F',       // Sage green
-                'earth-stone': '#8B8680',      // Stone gray
-                'earth-linen': '#D9CCC1',      // Linen beige
+                'primary-foreground': '#3D3D3D',
+                primary: '#FFFBF7',
+                // Angelic & spiritual accent colors - light, warm, ethereal
+                'angel-gold': '#E8C9A0',       // Soft gold - divine light
+                'angel-cream': '#F5EFE7',      // Warm cream - purity
+                'angel-blush': '#E8D5CC',      // Soft blush - warmth
+                'angel-sage': '#D4C9B8',       // Gentle sage - peace
+                'angel-ivory': '#FFFBF7',      // Ivory white - holiness
+                'angel-rose': '#E8C9C0',       // Soft rose - compassion
+                'angel-pearl': '#F0E8E0',      // Pearl - grace
+                'angel-dove': '#E0D5CC',       // Dove gray - serenity
             },
         },
     },
